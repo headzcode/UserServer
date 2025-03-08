@@ -3,24 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contador de Usuários com UserServer</title>
+  <title>Teste de Carregamento com EcoFull</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
+      margin: 0;
+      padding: 20px;
+      background: #f9f9f9;
     }
-    #userCount {
-      font-size: 2em;
-      font-weight: bold;
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .ecofull-placeholder {
+      background: #e0e0e0;
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
   </style>
+  <!-- Importa a EcoFull via jsDelivr -->
+  <script src="https://headzcode.github.io/EcoFull/ecofull.js"></script>
 </head>
 <body>
-  <h1>Contador de Usuários Conectados</h1>
-  <p>Usuários online: <span id="userCount">0</span></p>
+  <h1>Teste de Carregamento com EcoFull</h1>
 
-  <!-- Carrega a biblioteca UserServer -->
-  <script src="userserver.js"></script>
+  <!-- Repetindo a mesma imagem 20 vezes -->
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+  <div data-ecofull data-src="imagem1.jpg">
+    <div class="ecofull-placeholder"></div>
+  </div>
+
+  <!-- Configura a EcoFull -->
+  <script>
+    EcoFull.init({
+      threshold: 0.1, // Intensidade do carregamento (10% do elemento visível)
+      rootMargin: '100px', // Margem de pré-carregamento
+      placeholderClass: 'ecofull-placeholder', // Classe do placeholder
+      enableCache: false, // Desabilita cache para teste
+    });
+  </script>
 </body>
-</html>
+  </html>
